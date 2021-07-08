@@ -12,6 +12,9 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
+          name: install external dependencies
+          command: sudo apt-get install xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
+      - run:
           name: install dependencies
           command: npm install
       - save_cache:
