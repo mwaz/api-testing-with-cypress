@@ -1,4 +1,4 @@
 {
-    "baseUrl": "https://todo-app-barkend.herokuapp.com/",
+    "baseUrl": "http://todo-app-barkend.herokuapp.com/",
     "integrationFolder": "cypress/integration/api-tests"
 }
